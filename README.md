@@ -14,8 +14,11 @@ copy .env.example .env
 
 Put real keys in `.env` (never commit it):
 
-- `COMPOSIO_API_KEY` — from the Composio dashboard
-- `GEMINI_API_KEY` — from Google AI Studio (this project uses Gemini, not OpenAI)
+- `COMPOSIO_API_KEY` — Composio dashboard, **Write All**
+- `GROQ_API_KEY` — free key from [https://console.groq.com/keys](https://console.groq.com/keys)
+- `LLM_PROVIDER=groq` and `LLM_MODEL=openai/gpt-oss-120b`
+
+Gemini free Flash is capped at about 20 requests/day, which is too low for 100 apps. Groq’s free tier is the default.
 
 ## Commands
 

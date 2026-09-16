@@ -8,7 +8,7 @@
     "access": "self_serve",
     "api_type": "rest_and_graphql",
     "api_breadth": "broad",
-    "mcp": "community",
+    "mcp": "official",
     "verdict": "toolkit_today",
     "blocker": null,
     "evidence_urls": [
@@ -68,7 +68,7 @@
     "access": "admin",
     "api_type": "rest",
     "api_breadth": "broad",
-    "mcp": "none",
+    "mcp": "official",
     "verdict": "possible_with_work",
     "blocker": "API use requires a Google Ads developer token, which Google must approve.",
     "evidence_urls": [
@@ -108,7 +108,7 @@
     "access": "paid",
     "api_type": "rest",
     "api_breadth": "broad",
-    "mcp": "none",
+    "mcp": "official",
     "verdict": "toolkit_today",
     "blocker": "Paid credits required after signup; not partnership-gated.",
     "evidence_urls": [

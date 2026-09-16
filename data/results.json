@@ -1,1 +1,234 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/create-external-client-app.html",
+      "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/client-connection-overview.html"
+    ],
+    "one_liner": "Salesforce is a cloud CRM platform that offers AI‑enhanced features and a programmable REST API for building agentic applications.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+      "https://developer.zendesk.com/documentation/authentication/",
+      "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows"
+    ],
+    "one_liner": "Zendesk is an AI‑first service platform that lets businesses manage and resolve customer and employee requests across channels via tickets, chat, voice, and more.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.slack.dev/authentication/installing-with-oauth",
+      "https://docs.slack.dev/ai/slack-mcp-server"
+    ],
+    "one_liner": "Slack is a team communication platform that provides a programmable API for building bots, integrations, and AI agents.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "admin",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "possible_with_work",
+    "blocker": "requires developer token approval",
+    "evidence_urls": [
+      "https://developers.google.com/google-ads/api/rest/auth",
+      "https://developers.google.com/google-ads/api/docs/get-started/dev-token",
+      "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+    ],
+    "one_liner": "Google Ads lets you programmatically create and manage advertising campaigns across Google Search, Display, YouTube, and more.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://shopify.dev/docs/api/usage/authentication",
+      "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+      "https://shopify.dev/docs/apps/build/storefront-mcp/servers/customer-account"
+    ],
+    "one_liner": "Shopify is an e‑commerce platform that lets developers build apps and integrations to manage stores, products, orders, and more via REST and GraphQL APIs.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "auth_methods": [
+      "basic"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.dataforseo.com/v3/auth/",
+      "https://dataforseo.com/model-context-protocol",
+      "https://docs.dataforseo.com/v3/"
+    ],
+    "one_liner": "DataForSEO provides a REST API for extensive SEO data (SERP, backlinks, keyword, business info) and an official Model Context Protocol (MCP) server for AI integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+      "https://docs.github.com/rest",
+      "https://github.com/github/github-mcp-server/blob/main/docs/host-integration.md"
+    ],
+    "one_liner": "GitHub is a code hosting platform that offers extensive REST and GraphQL APIs for automating and integrating development workflows.",
+    "confidence": 0.98,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.notion.com/reference/authentication",
+      "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+      "https://developers.notion.com"
+    ],
+    "one_liner": "Notion is a collaborative workspace for notes, docs, databases, and tasks that provides a REST API and an official Model Context Protocol (MCP) server for AI‑tool integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.stripe.com/api",
+      "https://docs.stripe.com/api/authentication",
+      "https://docs.stripe.com/mcp"
+    ],
+    "one_liner": "Stripe offers a RESTful API for payment processing, billing, and financial services.",
+    "confidence": 0.98,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access": "partner_gated",
+    "api_type": "unknown",
+    "api_breadth": "narrow",
+    "mcp": "none",
+    "verdict": "blocked",
+    "blocker": "No official public API; only community‑built MCP that relies on browser cookies",
+    "evidence_urls": [
+      "https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/74d35753/docs/REMOTE_MCP.md",
+      "https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha"
+    ],
+    "one_liner": "NotebookLM is a Google AI‑powered notebook application for research and AI‑assisted writing.",
+    "confidence": 0.6,
+    "needs_human": true,
+    "notes": ""
+  }
+]
