@@ -14,8 +14,8 @@ copy .env.example .env
 
 Put real keys in `.env` (never commit it):
 
-- `COMPOSIO_API_KEY`
-- `OPENAI_API_KEY` (or another LLM key listed in `.env.example`)
+- `COMPOSIO_API_KEY` — from the Composio dashboard
+- `GEMINI_API_KEY` — from Google AI Studio (this project uses Gemini, not OpenAI)
 
 ## Commands (later phases)
 
