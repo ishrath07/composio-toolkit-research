@@ -1,1 +1,622 @@
-[]
+{
+  "pass1": {
+    "pass": "pass1",
+    "sample_ids": [
+      2,
+      8,
+      12,
+      18,
+      22,
+      26,
+      32,
+      35,
+      42,
+      48,
+      53,
+      56,
+      62,
+      65,
+      72,
+      77,
+      82,
+      86,
+      92,
+      98
+    ],
+    "missing_ids": [],
+    "n_scored": 20,
+    "field_hits": 89,
+    "field_total": 120,
+    "pct": 74.2,
+    "by_field": {
+      "auth_methods": {
+        "hits": 19,
+        "total": 20,
+        "pct": 95.0
+      },
+      "access": {
+        "hits": 17,
+        "total": 20,
+        "pct": 85.0
+      },
+      "api_type": {
+        "hits": 17,
+        "total": 20,
+        "pct": 85.0
+      },
+      "api_breadth": {
+        "hits": 15,
+        "total": 20,
+        "pct": 75.0
+      },
+      "mcp": {
+        "hits": 5,
+        "total": 20,
+        "pct": 25.0
+      },
+      "verdict": {
+        "hits": 16,
+        "total": 20,
+        "pct": 80.0
+      }
+    },
+    "rows": [
+      {
+        "id": 2,
+        "name": "HubSpot",
+        "category": "CRM and Sales",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 8,
+        "name": "Close",
+        "category": "CRM and Sales",
+        "ok": false,
+        "misses": [
+          {
+            "field": "api_breadth",
+            "expected": "medium",
+            "actual": "broad"
+          },
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Intercom",
+        "category": "Support and Helpdesk",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Help Scout",
+        "category": "Support and Helpdesk",
+        "ok": false,
+        "misses": [
+          {
+            "field": "api_breadth",
+            "expected": "medium",
+            "actual": "broad"
+          },
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "community"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Twilio",
+        "category": "Communications and Messaging",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Discord",
+        "category": "Communications and Messaging",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 32,
+        "name": "Meta Ads",
+        "category": "Marketing, Ads, Email and Social",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "name": "Mailchimp",
+        "category": "Marketing, Ads, Email and Social",
+        "ok": false,
+        "misses": [
+          {
+            "field": "api_type",
+            "expected": "rest",
+            "actual": "rest_and_graphql"
+          },
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "community"
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "name": "WooCommerce",
+        "category": "Ecommerce",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "name": "Gumroad",
+        "category": "Ecommerce",
+        "ok": false,
+        "misses": [
+          {
+            "field": "api_breadth",
+            "expected": "medium",
+            "actual": "narrow"
+          },
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "name": "Ahrefs",
+        "category": "Data, SEO and Scraping",
+        "ok": false,
+        "misses": [
+          {
+            "field": "access",
+            "expected": "paid",
+            "actual": "self_serve"
+          },
+          {
+            "field": "api_breadth",
+            "expected": "medium",
+            "actual": "broad"
+          },
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          },
+          {
+            "field": "verdict",
+            "expected": "possible_with_work",
+            "actual": "toolkit_today"
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "name": "Firecrawl",
+        "category": "Data, SEO and Scraping",
+        "ok": false,
+        "misses": [
+          {
+            "field": "api_breadth",
+            "expected": "medium",
+            "actual": "narrow"
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "name": "Vercel",
+        "category": "Developer, Infra and Data platforms",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "name": "Supabase",
+        "category": "Developer, Infra and Data platforms",
+        "ok": false,
+        "misses": [
+          {
+            "field": "api_type",
+            "expected": "rest",
+            "actual": "rest_and_graphql"
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "name": "Airtable",
+        "category": "Productivity and Project Management",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "name": "ClickUp",
+        "category": "Productivity and Project Management",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 82,
+        "name": "Plaid",
+        "category": "Finance and Fintech",
+        "ok": false,
+        "misses": [
+          {
+            "field": "access",
+            "expected": "admin",
+            "actual": "self_serve"
+          },
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          },
+          {
+            "field": "verdict",
+            "expected": "possible_with_work",
+            "actual": "toolkit_today"
+          }
+        ]
+      },
+      {
+        "id": 86,
+        "name": "QuickBooks",
+        "category": "Finance and Fintech",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 92,
+        "name": "Otter AI",
+        "category": "AI, Research and Media-native",
+        "ok": false,
+        "misses": [
+          {
+            "field": "access",
+            "expected": "paid",
+            "actual": "self_serve"
+          },
+          {
+            "field": "api_type",
+            "expected": "unknown",
+            "actual": "rest"
+          },
+          {
+            "field": "verdict",
+            "expected": "possible_with_work",
+            "actual": "toolkit_today"
+          }
+        ]
+      },
+      {
+        "id": 98,
+        "name": "Mermaid CLI",
+        "category": "AI, Research and Media-native",
+        "ok": false,
+        "misses": [
+          {
+            "field": "auth_methods",
+            "expected": [
+              "other"
+            ],
+            "actual": [
+              "unknown"
+            ]
+          },
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "community"
+          },
+          {
+            "field": "verdict",
+            "expected": "toolkit_today",
+            "actual": "blocked"
+          }
+        ]
+      }
+    ]
+  },
+  "pass2": {
+    "pass": "pass2",
+    "sample_ids": [
+      2,
+      8,
+      12,
+      18,
+      22,
+      26,
+      32,
+      35,
+      42,
+      48,
+      53,
+      56,
+      62,
+      65,
+      72,
+      77,
+      82,
+      86,
+      92,
+      98
+    ],
+    "missing_ids": [],
+    "n_scored": 20,
+    "field_hits": 115,
+    "field_total": 120,
+    "pct": 95.8,
+    "by_field": {
+      "auth_methods": {
+        "hits": 20,
+        "total": 20,
+        "pct": 100.0
+      },
+      "access": {
+        "hits": 19,
+        "total": 20,
+        "pct": 95.0
+      },
+      "api_type": {
+        "hits": 19,
+        "total": 20,
+        "pct": 95.0
+      },
+      "api_breadth": {
+        "hits": 18,
+        "total": 20,
+        "pct": 90.0
+      },
+      "mcp": {
+        "hits": 19,
+        "total": 20,
+        "pct": 95.0
+      },
+      "verdict": {
+        "hits": 20,
+        "total": 20,
+        "pct": 100.0
+      }
+    },
+    "rows": [
+      {
+        "id": 2,
+        "name": "HubSpot",
+        "category": "CRM and Sales",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 8,
+        "name": "Close",
+        "category": "CRM and Sales",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 12,
+        "name": "Intercom",
+        "category": "Support and Helpdesk",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 18,
+        "name": "Help Scout",
+        "category": "Support and Helpdesk",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 22,
+        "name": "Twilio",
+        "category": "Communications and Messaging",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 26,
+        "name": "Discord",
+        "category": "Communications and Messaging",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 32,
+        "name": "Meta Ads",
+        "category": "Marketing, Ads, Email and Social",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 35,
+        "name": "Mailchimp",
+        "category": "Marketing, Ads, Email and Social",
+        "ok": false,
+        "misses": [
+          {
+            "field": "api_type",
+            "expected": "rest",
+            "actual": "rest_and_graphql"
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "name": "WooCommerce",
+        "category": "Ecommerce",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 48,
+        "name": "Gumroad",
+        "category": "Ecommerce",
+        "ok": false,
+        "misses": [
+          {
+            "field": "mcp",
+            "expected": "none",
+            "actual": "official"
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "name": "Ahrefs",
+        "category": "Data, SEO and Scraping",
+        "ok": false,
+        "misses": [
+          {
+            "field": "access",
+            "expected": "paid",
+            "actual": "self_serve"
+          },
+          {
+            "field": "api_breadth",
+            "expected": "medium",
+            "actual": "broad"
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "name": "Firecrawl",
+        "category": "Data, SEO and Scraping",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 62,
+        "name": "Vercel",
+        "category": "Developer, Infra and Data platforms",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 65,
+        "name": "Supabase",
+        "category": "Developer, Infra and Data platforms",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 72,
+        "name": "Airtable",
+        "category": "Productivity and Project Management",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 77,
+        "name": "ClickUp",
+        "category": "Productivity and Project Management",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 82,
+        "name": "Plaid",
+        "category": "Finance and Fintech",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 86,
+        "name": "QuickBooks",
+        "category": "Finance and Fintech",
+        "ok": true,
+        "misses": []
+      },
+      {
+        "id": 92,
+        "name": "Otter AI",
+        "category": "AI, Research and Media-native",
+        "ok": false,
+        "misses": [
+          {
+            "field": "api_breadth",
+            "expected": "narrow",
+            "actual": "medium"
+          }
+        ]
+      },
+      {
+        "id": 98,
+        "name": "Mermaid CLI",
+        "category": "AI, Research and Media-native",
+        "ok": true,
+        "misses": []
+      }
+    ]
+  },
+  "auto": {
+    "n_rows": 100,
+    "n_flagged": 0,
+    "low_confidence_ids": [],
+    "issues": []
+  }
+}

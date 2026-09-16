@@ -22,6 +22,221 @@
     "notes": ""
   },
   {
+    "id": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "https://developers.hubspot.com/docs/api-reference/auth-oauth-v3/public-token/post-oauth-v3-token"
+    ],
+    "one_liner": "HubSpot is a CRM platform offering marketing, sales, service tools and an AI Model Context Protocol (MCP) server that lets agents interact with its data via APIs.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "https://www.pipedrive.com/en/features/crm-api",
+      "https://www.pipedrive.com/en/features/mcp-server"
+    ],
+    "one_liner": "Pipedrive is a sales pipeline CRM that lets teams track deals, automate workflows, and integrate via a RESTful API.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.attio.com/rest-api/guides/authentication",
+      "https://docs.attio.com/mcp/overview",
+      "https://attio.com/platform/developers?_rsc=1r34m"
+    ],
+    "one_liner": "Attio is an agentic CRM that lets teams manage contacts, deals, and workflows, offering a REST API and an official MCP server for AI‑agent integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 5,
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.twenty.com/developers/extend/api",
+      "https://docs.twenty.com/developers/extend/oauth",
+      "https://github.com/twentyhq/twenty/commit/ed2b2f8911616ae27f70b4dd3bc95b28c7843d93"
+    ],
+    "one_liner": "Twenty is an open‑source, extensible CRM platform that lets teams build custom objects, workflows and AI‑driven agents via REST and GraphQL APIs.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.podio.com/authentication",
+      "https://developers.podio.com/index/api",
+      "https://www.progress.com/podio/documentation/using-podio/podio-mcp-server"
+    ],
+    "one_liner": "Podio is a flexible work‑management and collaboration platform that lets teams build custom apps, automate workflows, and manage data via a RESTful API.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 7,
+    "name": "Zoho CRM",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+      "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+      "https://www.zoho.com/crm/developer/docs/api/v8/openapi-specification.html"
+    ],
+    "one_liner": "Zoho CRM is a cloud‑based customer relationship management platform that lets businesses manage leads, contacts, deals, and sales automation, with built‑in AI agents.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://help.close.com/docs/mcp-server",
+      "https://developer.close.com/topics/authentication",
+      "https://developer.close.com/api.md"
+    ],
+    "one_liner": "Close is a sales CRM that combines calling, email, SMS, automation, and an AI sales teammate, offering a REST API and an official MCP server for AI agents.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.copper.com/introduction/oauth/index.html",
+      "https://developer.copper.co/api-reference/create-api-key",
+      "https://www.developer.copper.com/introduction/requests.html",
+      "https://apis.io/apis/copper-banking/copper-mcp-server/"
+    ],
+    "one_liner": "Copper is a CRM that integrates tightly with Google Workspace to manage leads, deals, projects, and tasks.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "admin",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/docs/token",
+      "https://api.docs.dealcloud.com/docs/apikeys",
+      "https://api.docs.dealcloud.com/mcp/authentication"
+    ],
+    "one_liner": "DealCloud is a CRM platform that provides data and relationship management tools for investment and professional services firms.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
     "id": 11,
     "name": "Zendesk",
     "category": "Support and Helpdesk",
@@ -46,6 +261,226 @@
     "notes": ""
   },
   {
+    "id": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.intercom.com/docs/guides/mcp",
+      "https://developers.intercom.com/docs/references/rest-api/api.intercom.io/authentication",
+      "https://www.intercom.com"
+    ],
+    "one_liner": "Intercom is a customer support platform with an integrated AI agent (Fin) that offers a REST API and an official Model Context Protocol (MCP) for AI tool integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+      "https://developers.freshdesk.com/api/",
+      "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-"
+    ],
+    "one_liner": "Freshdesk is an AI‑powered customer support platform that lets agents manage tickets, contacts, knowledge base and other helpdesk functions via a REST API.",
+    "confidence": 0.94,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://dev.frontapp.com/docs/mcp-server",
+      "https://dev.frontapp.com/me/docs/create-and-manage-apps",
+      "https://dev.frontapp.com/docs/authentication",
+      "https://dev.frontapp.com/docs/core-api-getting-started"
+    ],
+    "one_liner": "Front is a customer service platform that unifies team conversations and provides AI‑powered tools to handle complex support tickets.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+      "https://www.usepylon.com/integrations/mcp",
+      "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server"
+    ],
+    "one_liner": "Pylon is an agentic support platform that lets AI agents and humans collaborate on customer issues across multiple channels.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "api_key",
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+      "https://support.liveagent.com/840770-Complete-API-reference",
+      "https://www.liveagent.com/features/api/",
+      "https://www.liveagent.com/features/mcp-server/"
+    ],
+    "one_liner": "LiveAgent is an all‑in‑one customer service platform offering help‑desk, live chat, ticketing and AI‑powered support.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://www.plain.com/docs/graphql/authentication",
+      "https://help.plain.com/article/mcp-server"
+    ],
+    "one_liner": "Plain is an AI‑powered support platform that lets teams manage multichannel conversations and build custom AI agents via an extensible API.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "oauth2",
+      "basic"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "https://developer.helpscout.com/docs-api/",
+      "https://github.com/solveitsimply/mcp-helpscout"
+    ],
+    "one_liner": "Help Scout is a shared inbox, help center, and live chat platform for customer support.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "basic",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.gorgias.com/reference/authentication",
+      "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "https://docs.gorgias.com/en-US/rest-api-208286",
+      "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+    ],
+    "one_liner": "Gorgias is a conversational AI‑powered helpdesk for ecommerce that lets brands manage support tickets and automate responses.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "auth_methods": [
+      "basic",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.gladly.com/",
+      "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+      "https://developer.gladly.com/rest/index.html",
+      "https://www.gladly.com/app-platform/?ss_ad_code=mbc_introduce"
+    ],
+    "one_liner": "Gladly is a customer experience platform that offers REST APIs and an App Platform for building integrations and AI‑agent toolkits.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
     "id": 21,
     "name": "Slack",
     "category": "Communications and Messaging",
@@ -63,6 +498,224 @@
       "https://docs.slack.dev/ai/slack-mcp-server"
     ],
     "one_liner": "Slack is a team communication platform that provides a programmable API for building bots, integrations, and AI agents.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "auth_methods": [
+      "basic",
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://www.twilio.com/docs/ai/mcp",
+      "https://www.twilio.com/docs/iam/oauth-apps/overview",
+      "https://www.twilio.com/docs/iam/api-keys"
+    ],
+    "one_liner": "Twilio provides cloud communications APIs for SMS, voice, email and other channels, enabling developers to build messaging and voice applications.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+      "https://www.zoho.com/cliq/help/platform/configure-zoho-cliq-mcp.html"
+    ],
+    "one_liner": "Zoho Cliq is a team communication platform that provides instant messaging, audio/video calls, channels, and AI‑powered collaboration features.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/get-user-access-token",
+      "https://github.com/larksuite/lark-openapi-mcp",
+      "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction"
+    ],
+    "one_liner": "Lark is a unified communications and collaboration suite offering messaging, video calls, calendar, docs, and other workplace tools.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+      "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "https://pumble.com/learn/pumble/ai-automation-guide/"
+    ],
+    "one_liner": "Pumble is a free team communication app that provides messaging, video calls, and an API plus an MCP server to connect external AI agents.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.discord.com/developers/topics/oauth2",
+      "https://docs.discord.com/developers/reference",
+      "https://fastmcp.wiki/en/integrations/discord"
+    ],
+    "one_liner": "Discord is a communications platform for chat, voice, and community that provides a REST API and OAuth2/bot token authentication for developers to build bots and integrations.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "auth_methods": [
+      "token",
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://core.telegram.org",
+      "https://core.telegram.org/api/obtaining_api_id",
+      "https://core.telegram.org/api",
+      "https://core.telegram.org/api/auth",
+      "https://core.telegram.org/api/url-authorization",
+      "https://core.telegram.org/api/bots"
+    ],
+    "one_liner": "Telegram provides APIs for bots, custom clients, and SMS verification, enabling developers to build messaging integrations.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 28,
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/whatsapp/business-management-api/get-started/",
+      "https://developers.facebook.com/docs/whatsapp/",
+      "https://developers.facebook.com/docs/whatsapp/overview/"
+    ],
+    "one_liner": "WhatsApp Business Platform provides APIs for businesses to send and receive WhatsApp messages, make calls, and manage their WhatsApp business account.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "one_liner": "Aircall is an AI-powered customer communications platform providing voice agents, automated workflows, and real-time coaching.",
+    "auth_methods": [
+      "basic",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.aircall.io/docs/authentication",
+      "https://developers.aircall.io/api-references",
+      "https://developer.aircall.io/docs/custom-actions"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "one_liner": "Vonage provides a suite of communication APIs for voice, video, messaging, and network features, including AI-driven capabilities.",
+    "auth_methods": [
+      "basic",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "https://developer.vonage.com/en/mcp-server/how-to-guides/install-documentation-mcp-server",
+      "https://developer.vonage.com"
+    ],
     "confidence": 0.95,
     "needs_human": false,
     "notes": ""
@@ -92,6 +745,220 @@
     "notes": ""
   },
   {
+    "id": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "one_liner": "A REST API for creating, managing, and optimizing ad campaigns across Meta platforms like Facebook and Instagram.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "admin",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "possible_with_work",
+    "blocker": "Requires app review and approval for production access tokens",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/marketing-apis",
+      "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+      "https://developers.facebook.com/docs/marketing-api/get-started/authentication/",
+      "https://developers.facebook.com/docs/marketing-api/get-started/authorization/"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "one_liner": "LinkedIn Marketing Platform APIs allow businesses to create campaigns, report performance, manage leads, and grow company pages.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "admin",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "possible_with_work",
+    "blocker": "Requires LinkedIn Marketing API Program approval and OAuth 2.0 setup",
+    "evidence_urls": [
+      "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-03",
+      "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-integrations-overview?view=li-lms-2026-06",
+      "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-08"
+    ],
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "one_liner": "GoHighLevel is a marketing automation and CRM platform that provides a REST API and an official MCP server for AI agent integration.",
+    "auth_methods": [
+      "token",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-use-the-highlevel-mcp-server",
+      "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+      "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://mailchimp.com/developer",
+      "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+      "https://mailchimp.com/developer/marketing/guides/quick-start/",
+      "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/"
+    ],
+    "one_liner": "Mailchimp offers marketing, transactional, and commerce APIs for email, SMS, and e-commerce integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.klaviyo.com/en/v2026-01-15/docs/authenticate_",
+      "https://developers.klaviyo.com/en/v2025-10-15/docs/klaviyo_mcp_server",
+      "https://developers.klaviyo.com"
+    ],
+    "one_liner": "Klaviyo is a marketing automation platform providing a REST API and an official MCP server for managing customer data, campaigns, and integrations.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "one_liner": "An all-in-one marketing platform for sales funnels, email marketing, and online courses.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.systeme.io/reference/api",
+      "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+      "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "one_liner": "Pinterest's developer platform allows integration for content creation, ad management, product catalogs, and analytics.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.pinterest.com/docs/getting-started/authentication/",
+      "https://developers.pinterest.com/docs/getting-started/connect-app/",
+      "https://github.com/pinterest/api-quickstart/",
+      "https://github.com/N-Graves/pinterest-mcp"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "one_liner": "The Threads API allows developers to create and publish posts, retrieve media and profiles, moderate replies, and access insights on the Threads platform.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "admin",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "community",
+    "verdict": "possible_with_work",
+    "blocker": "Requires Meta app review and approval for Threads API access",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/threads",
+      "https://developers.facebook.com/docs/threads/get-started/get-access-tokens-and-permissions/",
+      "https://github.com/poisonstefani-dev/threads-mcp"
+    ],
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "one_liner": "SendGrid is an email delivery service that provides APIs and SMTP services for sending transactional and marketing emails at scale.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+      "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+      "https://www.sendgrid.com"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
     "id": 41,
     "name": "Shopify",
     "category": "Ecommerce",
@@ -115,6 +982,224 @@
     "notes": ""
   },
   {
+    "id": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "auth_methods": [
+      "basic",
+      "api_key",
+      "other"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://woocommerce.com/document/woocommerce-rest-api",
+      "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+      "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html?php=",
+      "https://woocommerce.com/document/w7s-mcp/",
+      "https://developer.woocommerce.com/docs/features/mcp/"
+    ],
+    "one_liner": "WooCommerce provides a REST API for integrating eCommerce stores with external systems using API keys or OAuth 1.0a authentication.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "one_liner": "BigCommerce is an e-commerce platform providing REST and GraphQL APIs for managing store data, products, and orders, with an official MCP server for AI agent integration.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.bigcommerce.com",
+      "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+      "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "one_liner": "A cloud-based ecommerce platform providing APIs for storefront management, shopper interactions, and admin operations.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "partner_gated",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "blocked",
+    "blocker": "Requires Salesforce partnership or enterprise contract to obtain instance credentials and API access; not self-serve for general developers.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce",
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/mcp-server-intro.html",
+      "https://developer.salesforce.com/docs/commerce/sfnext/guide/authorization-for-admin-apis.html",
+      "https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/authorization-for-shopper-apis.html"
+    ],
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.adobe.com/commerce",
+      "https://developer.adobe.com/commerce/webapi/rest/",
+      "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+      "https://developer.adobe.com/commerce/webapi/get-started/authentication/"
+    ],
+    "one_liner": "Adobe Commerce (Magento) is an e-commerce platform that offers REST and GraphQL APIs for building and extending online stores.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "one_liner": "Squarespace is an e-commerce and website building platform that provides REST APIs for managing commerce, inventory, and site customization.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "https://developers.squarespace.com/commerce-apis/oauth",
+      "https://developers-preview.squarespace.com/mcp/mcp"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://api-docs.ecwid.com",
+      "https://docs.ecwid.com/get-started/make-your-first-api-request",
+      "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+      "https://docs.ecwid.com/launch-apps/native-and-external-apps.md"
+    ],
+    "one_liner": "Ecwid is an e-commerce platform that offers a REST API with OAuth 2.0 authentication for managing store data.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://gumroad.com/api",
+      "https://mintlify.wiki/antiwork/gumroad/api/authentication",
+      "https://gumroad.com/help/article/280-create-application-api"
+    ],
+    "one_liner": "Gumroad provides a REST API and CLI for managing products, sales, and user data for creators.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "admin",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "possible_with_work",
+    "blocker": "Developer registration and approval required",
+    "evidence_urls": [
+      "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+      "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+      "https://github.com/amzn/selling-partner-api-samples"
+    ],
+    "one_liner": "The Amazon Selling Partner API allows developers to build applications that manage seller accounts, inventory, orders, and reports on Amazon.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://fanbasis.com",
+      "https://github.com/subtain-haider/laravel-payments/blob/main/docs/gateways/fanbasis.md",
+      "https://www.npmjs.com/package/commas-cli",
+      "https://registry.npmjs.org/%40fanbasis%2Fcheckout-sdk"
+    ],
+    "one_liner": "Fanbasis (now Commas) is a payments and checkout platform for creators, offering API access via API key.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
     "id": 51,
     "name": "DataForSEO",
     "category": "Data, SEO and Scraping",
@@ -134,6 +1219,224 @@
     ],
     "one_liner": "DataForSEO provides a REST API for extensive SEO data (SERP, backlinks, keyword, business info) and an official Model Context Protocol (MCP) server for AI integration.",
     "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "SE Ranking is an SEO and web analytics platform that provides API access to data and project management endpoints.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "paid",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://seranking.com/api",
+      "https://github.com/seranking/seo-skills/blob/main/skills/seo-api/references/auth-and-keys.md",
+      "https://seranking.com/api/project/getting-started/",
+      "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://ahrefs.com/api",
+      "https://docs.ahrefs.com/",
+      "https://docs.ahrefs.com/llms.txt",
+      "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md"
+    ],
+    "one_liner": "Ahrefs provides a REST API and an official MCP server for accessing marketing and SEO data.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "auth_methods": [
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.mrscraper.com",
+      "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "https://docs.mrscraper.com/docs/api/authentication"
+    ],
+    "one_liner": "MrScraper is an all-in-one scraping platform that uses AI and manual scrapers to extract structured data from websites.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "Apify is a marketplace and platform for web scraping and automation tools (Actors) that provides APIs and MCP servers for AI agents to access data and orchestrate workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.apify.com",
+      "https://docs.apify.com/integrations/mcp.md",
+      "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+      "https://docs.apify.com/get-started/agent-onboarding"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 56,
+    "name": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.firecrawl.dev/mcp-server",
+      "https://docs.firecrawl.dev/introduction",
+      "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/oauth",
+      "https://www.firecrawl.dev/auth.md"
+    ],
+    "one_liner": "Firecrawl is a web‑scraping service that converts websites into LLM‑ready data.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "auth_methods": [
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.brightdata.com/api-reference/authentication",
+      "https://docs.brightdata.com/ai/mcp-server/remote/quickstart",
+      "https://docs.brightdata.com/ai/mcp-server/faqs",
+      "https://github.com/brightdata-com/brightdata-mcp"
+    ],
+    "one_liner": "Bright Data provides a platform for web data collection and proxy services with API token authentication and a remote MCP server.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "A command-line tool for identifying social media accounts across hundreds of platforms by username.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access": "self_serve",
+    "api_type": "none",
+    "api_breadth": "narrow",
+    "mcp": "community",
+    "verdict": "blocked",
+    "blocker": "No public API; CLI-only tool",
+    "evidence_urls": [
+      "https://github.com/sherlock-project/sherlock",
+      "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/README.md"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 59,
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.waterfall.io/v1/authentication",
+      "https://docs.waterfall.io/v1/introduction",
+      "https://docs.waterfall.io/v1/api-keys-overview",
+      "https://docs.waterfall.io/v1/api-keys-create",
+      "https://waterfall.io"
+    ],
+    "one_liner": "Waterfall.io is a B2B data platform that provides prospecting, enrichment, and job‑change intelligence via a REST API.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.clay.com/quickstart",
+      "https://university.clay.com/docs/clay-api-cli",
+      "https://developers.clay.com/public-api/authentication",
+      "https://www.clay.com"
+    ],
+    "one_liner": "Clay is a data infrastructure platform that offers APIs and an MCP for accessing and enriching audience and prospecting data.",
+    "confidence": 0.9,
     "needs_human": false,
     "notes": ""
   },
@@ -162,6 +1465,232 @@
     "notes": ""
   },
   {
+    "id": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "auth_methods": [
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://vercel.com/docs/rest-api",
+      "https://vercel.com/docs/rest-api/getting-started",
+      "https://vercel.com/docs/agent-resources/vercel-mcp.md",
+      "https://vercel.com/docs/mcp"
+    ],
+    "one_liner": "Vercel provides a REST API for managing projects, deployments, and access groups, authenticated with a bearer token.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.netlify.com/api",
+      "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+      "https://open-api.netlify.com/",
+      "https://github.com/netlify/context-and-tools/blob/HEAD/codex/skills/netlify-mcp-servers/references/authentication.md"
+    ],
+    "one_liner": "Netlify is a cloud hosting platform that provides a REST API for managing sites, deployments, forms, DNS, and more.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "one_liner": "Cloudflare provides a comprehensive suite of APIs for managing network infrastructure, security, and developer platforms.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.cloudflare.com/api",
+      "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls/",
+      "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "one_liner": "Supabase is an open-source backend-as-a-service platform providing Postgres database, authentication, storage, and real-time capabilities with a comprehensive REST and GraphQL API.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://supabase.com/docs/guides/ai-tools/mcp",
+      "https://supabase.com/docs/guides/auth/oauth-server/mcp-authentication",
+      "https://supabase.com/docs/guides/getting-started/api-keys"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "auth_methods": [
+      "oauth2",
+      "basic",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://neo4j.com/docs/mcp/current/authentication/",
+      "https://neo4j.com/docs/mcp/current/configuration/",
+      "https://neo4j.com/docs/mcp/current/",
+      "https://neo4j.com/docs/api"
+    ],
+    "one_liner": "Neo4j is a graph database platform that provides an official MCP server for AI agent integration, supporting HTTP transport with OAuth2 and Basic authentication.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.snowflake.com",
+      "https://docs.snowflake.com/en/sql-reference/sql/create-api-integration?wtime=",
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp-connectors?wtime=",
+      "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+    ],
+    "one_liner": "Snowflake is a cloud data platform that offers AI agent capabilities through its Cortex framework and provides a REST API for integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://www.mongodb.com/docs/atlas/api",
+      "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+      "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2",
+      "https://www.mongodb.com/docs/atlas/api/service-accounts/generate-oauth2-token/",
+      "https://www.mongodb.com/docs/mcp-server/remote-mcp/access-models",
+      "https://www.mongodb.com/docs/mcp-server/local-mcp/configuration/methods"
+    ],
+    "one_liner": "MongoDB Atlas provides a REST API for programmatic administration of clusters and projects.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "auth_methods": [
+      "api_key",
+      "token",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.datadoghq.com/api",
+      "https://www.datadoghq.com/blog/datadog-api-authentication/",
+      "https://docs.datadoghq.com/mcp%5Fserver/setup.md?tab=codex",
+      "https://docs.datadoghq.com/api/latest.md"
+    ],
+    "one_liner": "Datadog is a monitoring and analytics platform that exposes a REST API for programmatic access to metrics, logs, and traces.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "auth_methods": [
+      "token",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.sentry.io/api",
+      "https://sentry.io/docs/api/",
+      "https://sentry.io/mcp",
+      "https://sentrydocs.dev/api/authentication",
+      "https://raw.githubusercontent.com/getsentry/sentry-mcp/HEAD/README.md"
+    ],
+    "one_liner": "Sentry is an error monitoring and performance platform that lets developers track and fix issues in their applications.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
     "id": 71,
     "name": "Notion",
     "category": "Productivity and Project Management",
@@ -181,6 +1710,231 @@
       "https://developers.notion.com"
     ],
     "one_liner": "Notion is a collaborative workspace for notes, docs, databases, and tasks that provides a REST API and an official Model Context Protocol (MCP) server for AI‑tool integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://airtable.com/developers",
+      "https://airtable.com/developers/web/api/authentication",
+      "https://docs.workato.com/en/mcp/prebuilt-mcps/airtable-mcp-server",
+      "https://www.scalekit.com/blog/airtable-mvs-api"
+    ],
+    "one_liner": "Airtable is a cloud-based spreadsheet‑database hybrid that lets users build and query structured data via API or MCP for AI agents.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.linear.app",
+      "https://linear.app/docs/mcp.md",
+      "https://www.gamut.so/blog/linear-mcp-server-guide",
+      "https://docs.litellm.ai/docs/mcp_servers/linear"
+    ],
+    "one_liner": "Linear is a productivity and project management platform that offers a GraphQL API and an official Model Context Protocol server for AI integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.atlassian.com/cloud/rovo-mcp/",
+      "https://developer.atlassian.com/cloud/rovo-mcp/guides/authentication-and-authorization/",
+      "https://atlassian.github.io/atlassian-mcp-server/",
+      "https://developer.atlassian.com/cloud/jira/software/rest/intro/"
+    ],
+    "one_liner": "Jira is a project management platform that provides a comprehensive REST API for issue tracking and collaboration, and offers an official MCP server for AI tool integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "one_liner": "Asana is a project management platform that provides a developer API for automating workflows, integrating tools, and embedding custom components.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.asana.com",
+      "https://developers.asana.com/docs/authentication",
+      "https://developers.asana.com/docs/oauth",
+      "https://developers.asana.com/docs/integrating-with-asanas-mcp-server"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "one_liner": "A work management platform that provides APIs and an official MCP server to allow AI agents to interact with project data and workflows.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+      "https://developer.monday.com/api-reference/docs/authentication",
+      "https://developer.monday.com/api-reference/docs/mcp-api-token",
+      "https://developer.monday.com/api-reference/docs/mondaycom-mcp"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.clickup.com/docs/authentication",
+      "https://developer.clickup.com/docs/Getting%20Started.md",
+      "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+      "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+    ],
+    "one_liner": "ClickUp provides a public REST API and MCP server for building integrations and AI assistants in project management.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://coda.io/developers",
+      "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+      "https://www.gamut.so/mcp/project-management/coda",
+      "https://coda.io/apis/v1/openapi.yaml"
+    ],
+    "one_liner": "Coda is a collaborative document and project management platform that offers a REST API for automating and integrating its features.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "one_liner": "A cloud-based work management platform that provides APIs for managing sheets, reports, and resources.",
+    "auth_methods": [
+      "token",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+      "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "one_liner": "Harvest is a time tracking, project management, and invoicing platform for teams.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "https://help.getharvest.com/api-v2/introduction/overview/general/",
+      "https://mcpservers.org/servers/ianaleck/harvest-mcp-server"
+    ],
     "confidence": 0.95,
     "needs_human": false,
     "notes": ""
@@ -210,6 +1964,222 @@
     "notes": ""
   },
   {
+    "id": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "one_liner": "Plaid provides APIs for connecting to financial institutions to access account data, initiate payments, and verify identity.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "admin",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "possible_with_work",
+    "blocker": "Production API access requires approval/admin review after signup",
+    "evidence_urls": [
+      "https://plaid.com/docs",
+      "https://plaid.com/docs/resources/mcp/",
+      "https://plaid.com/docs/api/",
+      "https://plaid.com/docs/api/oauth/"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 83,
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://binance-docs.github.io",
+      "https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md",
+      "https://mewcp.com/mcp/binance",
+      "https://github.com/pawneetdev/binance-mcp"
+    ],
+    "one_liner": "Binance provides a REST API for cryptocurrency trading and market data, authenticated via API keys.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "auth_methods": [
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.paygent.to/reference/api-reference/",
+      "https://docs.paygent.to/getting-started/quickstart/",
+      "https://github.com/FoxRick/paygentic-sdk"
+    ],
+    "one_liner": "Paygent Connect provides a small REST API for managing payment plans, users, and subscriptions with bearer token authentication.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "one_liner": "A FINTRAC-registered FX forensic audit layer that compares bank or card-network rates against live mid-market rates across 300+ currencies.",
+    "auth_methods": [
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://www.ipayx.ai/docs/mcp-server",
+      "https://ipayx.ai/docs"
+    ],
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "https://github.com/intuit/quickbooks-online-mcp-server/blob/main/README.md",
+      "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/faq"
+    ],
+    "one_liner": "QuickBooks Online is a cloud-based accounting platform that provides a REST API and an official MCP server for financial data management.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.xero.com",
+      "https://developer.xero.com/faq/getting-started",
+      "https://developer.xero.com/faq",
+      "https://developer.xero.com/documentation/guides/oauth2/auth-flow"
+    ],
+    "one_liner": "Xero is an online accounting platform that offers a REST API for developers to integrate accounting, invoicing, and financial data.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.brex.com",
+      "https://developer.brex.com/",
+      "https://developer.brex.com/docs/mcp",
+      "https://developer.brex.com/guides/authentication"
+    ],
+    "one_liner": "Brex provides a unified spend platform and a developer API for custom workflows and internal tools.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "auth_methods": [
+      "oauth2",
+      "basic"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.ramp.com",
+      "https://docs.ramp.com/llms-guides/authorization.txt",
+      "https://docs.ramp.com/developer-api/v1/mcp",
+      "https://docs.ramp.com/llms-guides/getting-started.txt"
+    ],
+    "one_liner": "Ramp provides a finance platform with an API and Model Context Protocol for AI integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "one_liner": "PitchBook provides private market data, research, and tools for deal sourcing and market intelligence.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "partner_gated",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "possible_with_work",
+    "blocker": "Requires standalone contract and specific API credits; not self-serve.",
+    "evidence_urls": [
+      "https://pitchbook.com/help/PitchBook-api",
+      "https://documenter.getpostman.com/view/5190535/TzCV1iRc",
+      "https://pitchbook.com/blog/what-is-direct-data",
+      "https://mcpservers.org/remote-mcp-servers/pitchbook"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
     "id": 91,
     "name": "NotebookLM",
     "category": "AI, Research and Media-native",
@@ -229,6 +2199,226 @@
     "one_liner": "NotebookLM is a Google AI‑powered notebook application for research and AI‑assisted writing.",
     "confidence": 0.6,
     "needs_human": true,
+    "notes": ""
+  },
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://help.otter.ai",
+      "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+      "https://www.scalekit.com/blog/otter-mcp-vs-api",
+      "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+      "https://docs.otterly.ai/mcp-server",
+      "https://connect.tryotter.com/docs/guides-authentication/"
+    ],
+    "one_liner": "Otter.ai provides a public REST API for accessing meeting transcripts and an MCP server for OAuth 2.0 integration.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://help.fathom.video/en/articles/8368641",
+      "https://developers.fathom.ai/api-overview",
+      "https://developers.fathom.ai/",
+      "https://developers.fathom.ai/oauth",
+      "https://developers.fathom.ai/sdks/oauth",
+      "https://api.fathom.ai/mcp"
+    ],
+    "one_liner": "Fathom is a meeting AI notetaker that provides automated summaries and insights via a public REST API.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "one_liner": "Consensus is an AI academic search engine that allows users to search over 220 million peer-reviewed papers and interact with them via an MCP server.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.consensus.app/consensus-mcp",
+      "https://docs.consensus.app/docs/mcp",
+      "https://help.consensus.app/en/articles/13694300-how-to-use-consensus-in-claude-via-mcp"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 95,
+    "name": "Reducto",
+    "one_liner": "Reducto is an agentic document platform providing APIs to parse, extract, classify, and edit documents.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.reducto.ai/mcp-server",
+      "https://reducto.ai/developers",
+      "https://docs.reducto.ai/quickstart"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
+    "category": "AI, Research and Media-native",
+    "notes": ""
+  },
+  {
+    "id": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "one_liner": "Devin is an autonomous AI software engineer that writes, runs, and tests code to handle engineering tasks like bug fixes and feature implementation.",
+    "auth_methods": [
+      "token"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.devin.ai/api-reference/authentication",
+      "https://docs.devin.ai/api-reference/overview",
+      "https://docs.devin.ai/work-with-devin/devin-mcp"
+    ],
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "auth_methods": [
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://higgsfield.ai/cli",
+      "https://docs.higgsfield.ai/docs",
+      "https://github.com/higgsfield-ai/higgsfield-js/"
+    ],
+    "one_liner": "Higgsfield offers an API and MCP for generating images and videos via AI models.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "id": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "notes": ""
+  },
+  {
+    "id": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "auth_methods": [
+      "other"
+    ],
+    "access": "self_serve",
+    "api_type": "none",
+    "api_breadth": "narrow",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://github.com/mermaid-js/mermaid-cli",
+      "https://github.com/mermaid-js/mermaid-cli?tab=readme-ov-file",
+      "https://www.npmjs.com/package/@mermaid-js/mermaid-cli",
+      "https://deepwiki.com/mermaid-js/mermaid-cli/2-installation-and-usage"
+    ],
+    "one_liner": "A command-line tool and Node.js library for rendering Mermaid diagrams into SVG, PNG, or PDF files.",
+    "confidence": 0.9,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://transcriptapi.com",
+      "https://transcriptapi.com/docs/mcp/",
+      "https://github.com/ZeroPointRepo/youtube-mcp"
+    ],
+    "one_liner": "Provides a REST API and MCP to fetch YouTube transcripts, search videos, and browse channels.",
+    "confidence": 0.95,
+    "needs_human": false,
+    "notes": ""
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "one_liner": "Grain is an AI notetaker that captures and enriches meetings to provide context for AI agents and teams.",
+    "auth_methods": [
+      "token",
+      "oauth2"
+    ],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.grain.com/",
+      "https://support.grain.com/en/articles/15507288-grain-api",
+      "https://docs.grainql.com/ai-tools/mcp/overview"
+    ],
+    "confidence": 0.95,
+    "needs_human": false,
     "notes": ""
   }
 ]

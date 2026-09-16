@@ -1,0 +1,129 @@
+{
+  "sample_size": 20,
+  "pass1_pct": 74.2,
+  "pass2_pct": 95.8,
+  "headline": "sample of 20, 74.2% -> 95.8% after re-run",
+  "pass1_by_field": {
+    "auth_methods": {
+      "hits": 19,
+      "total": 20,
+      "pct": 95.0
+    },
+    "access": {
+      "hits": 17,
+      "total": 20,
+      "pct": 85.0
+    },
+    "api_type": {
+      "hits": 17,
+      "total": 20,
+      "pct": 85.0
+    },
+    "api_breadth": {
+      "hits": 15,
+      "total": 20,
+      "pct": 75.0
+    },
+    "mcp": {
+      "hits": 5,
+      "total": 20,
+      "pct": 25.0
+    },
+    "verdict": {
+      "hits": 16,
+      "total": 20,
+      "pct": 80.0
+    }
+  },
+  "pass2_by_field": {
+    "auth_methods": {
+      "hits": 20,
+      "total": 20,
+      "pct": 100.0
+    },
+    "access": {
+      "hits": 19,
+      "total": 20,
+      "pct": 95.0
+    },
+    "api_type": {
+      "hits": 19,
+      "total": 20,
+      "pct": 95.0
+    },
+    "api_breadth": {
+      "hits": 18,
+      "total": 20,
+      "pct": 90.0
+    },
+    "mcp": {
+      "hits": 19,
+      "total": 20,
+      "pct": 95.0
+    },
+    "verdict": {
+      "hits": 20,
+      "total": 20,
+      "pct": 100.0
+    }
+  },
+  "auto_flagged": 0,
+  "auto_n_rows": 100,
+  "honest_misses_after_pass2": [
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "misses": [
+        {
+          "field": "api_type",
+          "expected": "rest",
+          "actual": "rest_and_graphql"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Gumroad",
+      "misses": [
+        {
+          "field": "mcp",
+          "expected": "none",
+          "actual": "official"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Ahrefs",
+      "misses": [
+        {
+          "field": "access",
+          "expected": "paid",
+          "actual": "self_serve"
+        },
+        {
+          "field": "api_breadth",
+          "expected": "medium",
+          "actual": "broad"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "misses": [
+        {
+          "field": "api_breadth",
+          "expected": "narrow",
+          "actual": "medium"
+        }
+      ]
+    }
+  ],
+  "human_needed": [
+    "JS-only or login-walled docs still need a human click",
+    "MCP official vs community is easy to mix up when blogs copy vendor docs",
+    "paid vs self_serve (credits/plans) and sibling-product APIs (Mailchimp GraphQL) still miss"
+  ],
+  "gold_notes": "Pass-2 gold uses vendor docs opened for this sample (Woo/ClickUp/Airtable/Ahrefs MCP official; Otter MCP self-serve; Ahrefs paid but toolkit_today)."
+}

@@ -16,7 +16,8 @@ Put real keys in `.env` (never commit it):
 
 - `COMPOSIO_API_KEY` — Composio dashboard, **Write All**
 - `GROQ_API_KEY` — free key from [https://console.groq.com/keys](https://console.groq.com/keys)
-- `LLM_PROVIDER=groq` and `LLM_MODEL=openai/gpt-oss-120b`
+- `LLM_PROVIDER=groq`
+- `GROQ_MODELS=qwen/qwen3.8-27b,openai/gpt-oss-20b,openai/gpt-oss-safeguard-20b` — split load; skip Allam and compound-mini (bad JSON / tiny daily cap)
 
 Gemini free Flash is capped at about 20 requests/day, which is too low for 100 apps. Groq’s free tier is the default.
 

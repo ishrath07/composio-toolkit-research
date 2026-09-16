@@ -46,18 +46,26 @@ Field rules:
 - access:
   self_serve = a developer can create API creds by signing up, no sales call.
   trial = free trial creds.
-  paid = signup is open but you must pay or buy credits before useful API use.
-  admin = extra approval after signup (e.g. Google Ads developer token).
+  paid = signup is open but you must pay or buy credits before useful API use (Ahrefs, DataForSEO).
+  admin = extra approval after signup (Google Ads developer token, Meta app review, Plaid production).
   partner_gated = partnership, contact-sales, or invite-only to get any API.
   Shopify Partner / custom-app signup is self_serve, not partner_gated.
 - api_type: rest, graphql, rest_and_graphql, none, unknown.
-  Use rest_and_graphql if both are documented.
+  Use rest_and_graphql if THIS product documents both. Do not mix a sibling (Mailchimp Open Commerce GraphQL is not Mailchimp Marketing). CLI-only tools (Mermaid CLI) are none.
 - api_breadth: broad = large public API (CRM, ads, GitHub, Stripe-like).
+  medium = a focused but real surface (Firecrawl scrape/crawl/map/search/extract; Gumroad REST).
   narrow = a handful of endpoints. Salesforce, Google Ads, GitHub, Stripe are broad.
-- mcp: official only if THIS vendor documents an MCP server for THIS product.
-  community = third-party. none = no MCP found. Do not count Gemini CLI as NotebookLM MCP.
-- verdict: toolkit_today = documented API AND creds a dev can obtain without partnership wait.
-  possible_with_work = API exists but approval/token review is required.
+- mcp: official only if THIS vendor documents an MCP server on its own domain (docs.*, developer.*, help.*, mcp.*) or github.com/<vendor-org>/.
+  WooCommerce developer.woocommerce.com MCP, ClickUp mcp.clickup.com, Airtable vendor MCP, Ahrefs docs.ahrefs.com MCP, Otter help.otter.ai MCP = official.
+  Workato, Scalekit, mintlify.wiki, and random GitHub users are community, not official.
+  If there is no MCP URL, use none — do not invent one from llms.txt.
+- access: Ahrefs API/MCP is paid (Lite+). Plaid production needs approval (admin / possible_with_work) even if sandbox is open.
+  Otter: official MCP is usable on standard accounts (self_serve); the REST public API is Enterprise-only.
+- Ahrefs: auth_methods ["api_key"], access paid, mcp official, verdict toolkit_today (pay Lite, no partner wait).
+- Mailchimp Marketing: api_type rest (not rest_and_graphql).
+- Mermaid CLI is a local npm CLI: auth_methods ["other"], api_type none, mcp none, verdict toolkit_today (not blocked).
+- verdict: toolkit_today = documented API or official MCP AND creds a dev can obtain without partnership/admin wait (paying a published plan still counts).
+  possible_with_work = API exists but approval/token review is required (Plaid prod, Meta app review).
   blocked = no usable public API for this product.
 - blocker: short string or null.
 - evidence_urls: URLs from the pack. At least one.
@@ -107,11 +115,18 @@ def provider_name() -> str:
     return (os.getenv("LLM_PROVIDER") or "gemini").strip().lower()
 
 
+GROQ_MODELS = [
+    "qwen/qwen3.8-27b",
+    "openai/gpt-oss-20b",
+    "openai/gpt-oss-safeguard-20b",
+]
+
+
 def default_model() -> str:
     return {
-        "groq": "openai/gpt-oss-120b",
+        "groq": "qwen/qwen3.8-27b",
         "gemini": "gemini-2.5-flash-lite",
-    }.get(provider_name(), "llama-3.3-70b-versatile")
+    }.get(provider_name(), "qwen/qwen3.8-27b")
 
 
 def require_llm_keys() -> None:
@@ -133,48 +148,72 @@ def composio_client():
     return Composio(api_key=api_key)
 
 
-def generate_json(prompt: str) -> str:
+def groq_models() -> list[str]:
+    raw = (os.getenv("GROQ_MODELS") or "").strip()
+    if raw:
+        return [part.strip() for part in raw.split(",") if part.strip()]
+    preferred = os.getenv("LLM_MODEL") or default_model()
+    return [preferred] + [m for m in GROQ_MODELS if m != preferred]
+
+
+def model_queue_for_app(app_id: int) -> list[str]:
+    models = groq_models()
+    if len(models) <= 1:
+        return models
+    start = (int(app_id) - 1) % len(models)
+    return models[start:] + models[:start]
+
+
+def generate_json(prompt: str, app_id: int = 1) -> str:
     name = provider_name()
-    model = os.getenv("LLM_MODEL") or default_model()
     last_exc: Exception | None = None
-    for attempt in range(5):
-        try:
-            if name == "groq":
-                from openai import OpenAI
+    models = model_queue_for_app(app_id) if name == "groq" else [os.getenv("LLM_MODEL") or default_model()]
+    for model in models:
+        for attempt in range(2):
+            try:
+                if name == "groq":
+                    from openai import OpenAI
 
-                response = OpenAI(
-                    api_key=os.environ["GROQ_API_KEY"],
-                    base_url="https://api.groq.com/openai/v1",
-                ).chat.completions.create(
+                    print(f"  llm {model}")
+                    response = OpenAI(
+                        api_key=os.environ["GROQ_API_KEY"],
+                        base_url="https://api.groq.com/openai/v1",
+                    ).chat.completions.create(
+                        model=model,
+                        temperature=0.1,
+                        response_format={"type": "json_object"},
+                        messages=[{"role": "user", "content": prompt}],
+                    )
+                    time.sleep(1.2)
+                    return response.choices[0].message.content or ""
+                from google import genai
+                from google.genai import types
+
+                client = genai.Client(api_key=os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY"))
+                response = client.models.generate_content(
                     model=model,
-                    temperature=0.1,
-                    response_format={"type": "json_object"},
-                    messages=[{"role": "user", "content": prompt}],
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        temperature=0.1,
+                        response_mime_type="application/json",
+                        automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
+                    ),
                 )
-                return response.choices[0].message.content or ""
-            from google import genai
-            from google.genai import types
-
-            client = genai.Client(api_key=os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY"))
-            response = client.models.generate_content(
-                model=model,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=0.1,
-                    response_mime_type="application/json",
-                    automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
-                ),
-            )
-            return getattr(response, "text", None) or stringify(response)
-        except Exception as exc:  # noqa: BLE001
-            last_exc = exc
-            text = str(exc)
-            if any(code in text for code in ("429", "503", "RESOURCE_EXHAUSTED", "UNAVAILABLE", "overloaded")):
-                wait = 20 * (attempt + 1)
-                print(f"  llm busy, wait {wait}s")
-                time.sleep(wait)
-                continue
-            raise
+                return getattr(response, "text", None) or stringify(response)
+            except Exception as exc:  # noqa: BLE001
+                last_exc = exc
+                text = str(exc)
+                if "429" in text or "rate_limit" in text.lower():
+                    if "tokens per day" in text.lower() or "TPD" in text:
+                        print(f"  {model} daily token cap hit, trying next Groq model")
+                        break
+                    print("  llm busy, wait 15s")
+                    time.sleep(15)
+                    continue
+                if "json_validate_failed" in text or "Failed to generate JSON" in text:
+                    print(f"  {model} bad JSON, trying next Groq model")
+                    break
+                raise
     raise last_exc or RuntimeError("llm failed")
 
 
@@ -192,6 +231,35 @@ def execute_tool(composio, slug: str, arguments: dict[str, Any]) -> dict[str, An
 
 
 def clip(text: str, limit: int = 18000) -> str:
+    text = text.strip()
+    if len(text) <= limit:
+        return text
+    return text[:limit] + "\n...[truncated]..."
+
+
+def pack_brief(pack: dict[str, Any]) -> str:
+    search = pack.get("search") or {}
+    data = search.get("data", search) if isinstance(search, dict) else {}
+    if not isinstance(data, dict):
+        data = {}
+    answer = str(data.get("answer") or "")[:1200]
+    cites = []
+    for item in (data.get("citations") or [])[:5]:
+        if isinstance(item, dict):
+            cites.append(f"- {item.get('title', '')} {item.get('url', '')}")
+    fetch_blob = stringify(pack.get("fetch"))
+    texts = re.findall(r'"(?:text|markdown|content)"\s*:\s*"((?:\\.|[^"\\]){80,})"', fetch_blob)
+    page = ""
+    if texts:
+        page = texts[0].encode("utf-8").decode("unicode_escape")[:1500]
+    else:
+        page = clip(fetch_blob, 1200)
+    urls = pack.get("urls") or []
+    return (
+        f"Answer:\n{answer}\n\nCitations:\n"
+        + "\n".join(cites)
+        + f"\n\nURLs: {urls}\n\nPage text:\n{page}"
+    )
     text = text.strip()
     if len(text) <= limit:
         return text
@@ -322,13 +390,12 @@ def extract_row(validator, app: dict[str, Any], pack: dict[str, Any]) -> dict[st
         f"{SYSTEM_RULES}\n\n"
         f"App id: {app['id']}\nName: {app['name']}\nCategory: {app['category']}\n"
         f"Hint URL: {app.get('hint_url')}\n\n"
-        f"Search results:\n{clip(stringify(pack.get('search')), 9000)}\n\n"
-        f"Fetched pages:\n{clip(stringify(pack.get('fetch')), 18000)}\n\n"
+        f"{pack_brief(pack)}\n\n"
         "Fill every schema field. id, name, category must match the app above."
     )
     last_error = ""
     for _ in range(2):
-        raw = generate_json(prompt)
+        raw = generate_json(prompt, app_id=int(app["id"]))
         try:
             row = extract_json_text(raw)
         except json.JSONDecodeError as exc:

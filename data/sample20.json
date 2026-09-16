@@ -1,0 +1,22 @@
+[
+  {"id": 2, "name": "HubSpot", "category": "CRM and Sales", "auth_methods": ["oauth2"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 8, "name": "Close", "category": "CRM and Sales", "auth_methods": ["api_key"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 12, "name": "Intercom", "category": "Support and Helpdesk", "auth_methods": ["oauth2", "token"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 18, "name": "Help Scout", "category": "Support and Helpdesk", "auth_methods": ["oauth2"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "community", "verdict": "toolkit_today"},
+  {"id": 22, "name": "Twilio", "category": "Communications and Messaging", "auth_methods": ["api_key", "basic"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 26, "name": "Discord", "category": "Communications and Messaging", "auth_methods": ["oauth2", "token"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "none", "verdict": "toolkit_today"},
+  {"id": 32, "name": "Meta Ads", "category": "Marketing, Ads, Email and Social", "auth_methods": ["oauth2"], "access": "admin", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "possible_with_work"},
+  {"id": 35, "name": "Mailchimp", "category": "Marketing, Ads, Email and Social", "auth_methods": ["oauth2", "api_key"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "none", "verdict": "toolkit_today"},
+  {"id": 42, "name": "WooCommerce", "category": "Ecommerce", "auth_methods": ["basic", "oauth2"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 48, "name": "Gumroad", "category": "Ecommerce", "auth_methods": ["oauth2"], "access": "self_serve", "api_type": "rest", "api_breadth": "medium", "mcp": "none", "verdict": "toolkit_today"},
+  {"id": 53, "name": "Ahrefs", "category": "Data, SEO and Scraping", "auth_methods": ["api_key"], "access": "paid", "api_type": "rest", "api_breadth": "medium", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 56, "name": "Firecrawl", "category": "Data, SEO and Scraping", "auth_methods": ["api_key"], "access": "self_serve", "api_type": "rest", "api_breadth": "medium", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 62, "name": "Vercel", "category": "Developer, Infra and Data platforms", "auth_methods": ["oauth2", "token"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 65, "name": "Supabase", "category": "Developer, Infra and Data platforms", "auth_methods": ["api_key"], "access": "self_serve", "api_type": "rest_and_graphql", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 72, "name": "Airtable", "category": "Productivity and Project Management", "auth_methods": ["oauth2", "token"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 77, "name": "ClickUp", "category": "Productivity and Project Management", "auth_methods": ["oauth2", "token"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 82, "name": "Plaid", "category": "Finance and Fintech", "auth_methods": ["oauth2"], "access": "admin", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "possible_with_work"},
+  {"id": 86, "name": "QuickBooks", "category": "Finance and Fintech", "auth_methods": ["oauth2"], "access": "self_serve", "api_type": "rest", "api_breadth": "broad", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 92, "name": "Otter AI", "category": "AI, Research and Media-native", "auth_methods": ["oauth2"], "access": "self_serve", "api_type": "rest", "api_breadth": "narrow", "mcp": "official", "verdict": "toolkit_today"},
+  {"id": 98, "name": "Mermaid CLI", "category": "AI, Research and Media-native", "auth_methods": ["other"], "access": "self_serve", "api_type": "none", "api_breadth": "narrow", "mcp": "none", "verdict": "toolkit_today"}
+]
