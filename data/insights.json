@@ -1,1 +1,527 @@
-{}
+{
+  "n": 100,
+  "verdicts": {
+    "counts": {
+      "toolkit_today": 90,
+      "possible_with_work": 7,
+      "blocked": 3
+    },
+    "by_category": {
+      "CRM and Sales": {
+        "toolkit_today": 10
+      },
+      "Support and Helpdesk": {
+        "toolkit_today": 10
+      },
+      "Communications and Messaging": {
+        "toolkit_today": 10
+      },
+      "Marketing, Ads, Email and Social": {
+        "possible_with_work": 4,
+        "toolkit_today": 6
+      },
+      "Ecommerce": {
+        "toolkit_today": 8,
+        "blocked": 1,
+        "possible_with_work": 1
+      },
+      "Data, SEO and Scraping": {
+        "toolkit_today": 9,
+        "blocked": 1
+      },
+      "Developer, Infra and Data platforms": {
+        "toolkit_today": 10
+      },
+      "Productivity and Project Management": {
+        "toolkit_today": 10
+      },
+      "Finance and Fintech": {
+        "toolkit_today": 8,
+        "possible_with_work": 2
+      },
+      "AI, Research and Media-native": {
+        "blocked": 1,
+        "toolkit_today": 9
+      }
+    },
+    "n": 100
+  },
+  "auth": {
+    "method_mentions": {
+      "oauth2": 78,
+      "api_key": 40,
+      "token": 38,
+      "basic": 10,
+      "other": 2,
+      "unknown": 2
+    },
+    "oauth2_apps": 78,
+    "api_key_apps": 40,
+    "oauth2_pct": 78.0,
+    "api_key_pct": 40.0,
+    "by_category": {
+      "CRM and Sales": {
+        "top": "oauth2",
+        "top_n": 10,
+        "n": 10,
+        "oauth2_apps": 10,
+        "api_key_apps": 6
+      },
+      "Support and Helpdesk": {
+        "top": "oauth2",
+        "top_n": 9,
+        "n": 10,
+        "oauth2_apps": 9,
+        "api_key_apps": 3
+      },
+      "Communications and Messaging": {
+        "top": "oauth2",
+        "top_n": 9,
+        "n": 10,
+        "oauth2_apps": 9,
+        "api_key_apps": 3
+      },
+      "Marketing, Ads, Email and Social": {
+        "top": "oauth2",
+        "top_n": 8,
+        "n": 10,
+        "oauth2_apps": 8,
+        "api_key_apps": 4
+      },
+      "Ecommerce": {
+        "top": "oauth2",
+        "top_n": 8,
+        "n": 10,
+        "oauth2_apps": 8,
+        "api_key_apps": 3
+      },
+      "Data, SEO and Scraping": {
+        "top": "api_key",
+        "top_n": 5,
+        "n": 10,
+        "oauth2_apps": 3,
+        "api_key_apps": 5
+      },
+      "Developer, Infra and Data platforms": {
+        "top": "oauth2",
+        "top_n": 8,
+        "n": 10,
+        "oauth2_apps": 8,
+        "api_key_apps": 4
+      },
+      "Productivity and Project Management": {
+        "top": "oauth2",
+        "top_n": 10,
+        "n": 10,
+        "oauth2_apps": 10,
+        "api_key_apps": 2
+      },
+      "Finance and Fintech": {
+        "top": "oauth2",
+        "top_n": 7,
+        "n": 10,
+        "oauth2_apps": 7,
+        "api_key_apps": 4
+      },
+      "AI, Research and Media-native": {
+        "top": "api_key",
+        "top_n": 6,
+        "n": 10,
+        "oauth2_apps": 6,
+        "api_key_apps": 6
+      }
+    }
+  },
+  "access": {
+    "counts": {
+      "self_serve": 89,
+      "admin": 7,
+      "partner_gated": 3,
+      "paid": 1
+    },
+    "self_serve_or_trial": 89,
+    "gated": 11,
+    "self_pct": 89.0,
+    "gated_pct": 11.0,
+    "by_category": {
+      "CRM and Sales": {
+        "n": 10,
+        "self_serve_or_trial": 9,
+        "gated": 1,
+        "self_pct": 90.0,
+        "gated_names": [
+          "DealCloud"
+        ],
+        "access": {
+          "self_serve": 9,
+          "admin": 1
+        }
+      },
+      "Support and Helpdesk": {
+        "n": 10,
+        "self_serve_or_trial": 10,
+        "gated": 0,
+        "self_pct": 100.0,
+        "gated_names": [],
+        "access": {
+          "self_serve": 10
+        }
+      },
+      "Communications and Messaging": {
+        "n": 10,
+        "self_serve_or_trial": 10,
+        "gated": 0,
+        "self_pct": 100.0,
+        "gated_names": [],
+        "access": {
+          "self_serve": 10
+        }
+      },
+      "Marketing, Ads, Email and Social": {
+        "n": 10,
+        "self_serve_or_trial": 6,
+        "gated": 4,
+        "self_pct": 60.0,
+        "gated_names": [
+          "Google Ads",
+          "Meta Ads",
+          "LinkedIn Ads",
+          "Threads (Meta)"
+        ],
+        "access": {
+          "admin": 4,
+          "self_serve": 6
+        }
+      },
+      "Ecommerce": {
+        "n": 10,
+        "self_serve_or_trial": 8,
+        "gated": 2,
+        "self_pct": 80.0,
+        "gated_names": [
+          "Salesforce Commerce Cloud",
+          "Amazon Selling Partner"
+        ],
+        "access": {
+          "self_serve": 8,
+          "partner_gated": 1,
+          "admin": 1
+        }
+      },
+      "Data, SEO and Scraping": {
+        "n": 10,
+        "self_serve_or_trial": 9,
+        "gated": 1,
+        "self_pct": 90.0,
+        "gated_names": [
+          "SE Ranking"
+        ],
+        "access": {
+          "self_serve": 9,
+          "paid": 1
+        }
+      },
+      "Developer, Infra and Data platforms": {
+        "n": 10,
+        "self_serve_or_trial": 10,
+        "gated": 0,
+        "self_pct": 100.0,
+        "gated_names": [],
+        "access": {
+          "self_serve": 10
+        }
+      },
+      "Productivity and Project Management": {
+        "n": 10,
+        "self_serve_or_trial": 10,
+        "gated": 0,
+        "self_pct": 100.0,
+        "gated_names": [],
+        "access": {
+          "self_serve": 10
+        }
+      },
+      "Finance and Fintech": {
+        "n": 10,
+        "self_serve_or_trial": 8,
+        "gated": 2,
+        "self_pct": 80.0,
+        "gated_names": [
+          "Plaid",
+          "PitchBook"
+        ],
+        "access": {
+          "self_serve": 8,
+          "admin": 1,
+          "partner_gated": 1
+        }
+      },
+      "AI, Research and Media-native": {
+        "n": 10,
+        "self_serve_or_trial": 9,
+        "gated": 1,
+        "self_pct": 90.0,
+        "gated_names": [
+          "NotebookLM"
+        ],
+        "access": {
+          "partner_gated": 1,
+          "self_serve": 9
+        }
+      }
+    }
+  },
+  "mcp": {
+    "counts": {
+      "official": 80,
+      "community": 9,
+      "none": 11
+    },
+    "official": 80,
+    "community": 9,
+    "missing": 11,
+    "official_pct": 80.0,
+    "missing_pct": 11.0,
+    "by_category": {
+      "CRM and Sales": {
+        "n": 10,
+        "official": 9,
+        "community": 1,
+        "missing": 0,
+        "official_pct": 90.0,
+        "missing_names": []
+      },
+      "Support and Helpdesk": {
+        "n": 10,
+        "official": 8,
+        "community": 1,
+        "missing": 1,
+        "official_pct": 80.0,
+        "missing_names": [
+          "Gladly"
+        ]
+      },
+      "Communications and Messaging": {
+        "n": 10,
+        "official": 7,
+        "community": 0,
+        "missing": 3,
+        "official_pct": 70.0,
+        "missing_names": [
+          "Discord",
+          "Telegram",
+          "WhatsApp Business"
+        ]
+      },
+      "Marketing, Ads, Email and Social": {
+        "n": 10,
+        "official": 5,
+        "community": 3,
+        "missing": 2,
+        "official_pct": 50.0,
+        "missing_names": [
+          "Mailchimp",
+          "SendGrid"
+        ]
+      },
+      "Ecommerce": {
+        "n": 10,
+        "official": 8,
+        "community": 1,
+        "missing": 1,
+        "official_pct": 80.0,
+        "missing_names": [
+          "Ecwid"
+        ]
+      },
+      "Data, SEO and Scraping": {
+        "n": 10,
+        "official": 8,
+        "community": 1,
+        "missing": 1,
+        "official_pct": 80.0,
+        "missing_names": [
+          "Waterfall.io"
+        ]
+      },
+      "Developer, Infra and Data platforms": {
+        "n": 10,
+        "official": 10,
+        "community": 0,
+        "missing": 0,
+        "official_pct": 100.0,
+        "missing_names": []
+      },
+      "Productivity and Project Management": {
+        "n": 10,
+        "official": 9,
+        "community": 1,
+        "missing": 0,
+        "official_pct": 90.0,
+        "missing_names": []
+      },
+      "Finance and Fintech": {
+        "n": 10,
+        "official": 8,
+        "community": 1,
+        "missing": 1,
+        "official_pct": 80.0,
+        "missing_names": [
+          "Paygent Connect"
+        ]
+      },
+      "AI, Research and Media-native": {
+        "n": 10,
+        "official": 8,
+        "community": 0,
+        "missing": 2,
+        "official_pct": 80.0,
+        "missing_names": [
+          "NotebookLM",
+          "Mermaid CLI"
+        ]
+      }
+    },
+    "missing_but_toolkit": [
+      "Gladly",
+      "Discord",
+      "Telegram",
+      "WhatsApp Business",
+      "Mailchimp",
+      "SendGrid",
+      "Ecwid",
+      "Waterfall.io",
+      "Paygent Connect",
+      "Mermaid CLI"
+    ]
+  },
+  "blockers": {
+    "hard_rows": 12,
+    "counts": {
+      "admin / app review": 7,
+      "paid plan / credits": 2,
+      "no public API": 2,
+      "partnership / contact-sales": 1
+    },
+    "examples": {
+      "admin / app review": [
+        "DealCloud",
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "Threads (Meta)",
+        "Amazon Selling Partner"
+      ],
+      "partnership / contact-sales": [
+        "Salesforce Commerce Cloud"
+      ],
+      "paid plan / credits": [
+        "SE Ranking",
+        "PitchBook"
+      ],
+      "no public API": [
+        "Sherlock",
+        "NotebookLM"
+      ]
+    },
+    "mcp_gap_with_api": {
+      "n": 10,
+      "examples": [
+        "Gladly",
+        "Discord",
+        "Telegram",
+        "WhatsApp Business",
+        "Mailchimp",
+        "SendGrid",
+        "Ecwid",
+        "Waterfall.io",
+        "Paygent Connect",
+        "Mermaid CLI"
+      ]
+    }
+  },
+  "clusters": {
+    "easy_toolkit_wins": {
+      "n": 72,
+      "pct": 72.0,
+      "by_category": {
+        "CRM and Sales": 8,
+        "Support and Helpdesk": 8,
+        "Communications and Messaging": 7,
+        "Marketing, Ads, Email and Social": 3,
+        "Ecommerce": 6,
+        "Data, SEO and Scraping": 7,
+        "Developer, Infra and Data platforms": 10,
+        "Productivity and Project Management": 9,
+        "Finance and Fintech": 6,
+        "AI, Research and Media-native": 8
+      },
+      "examples": [
+        "Salesforce",
+        "HubSpot",
+        "Pipedrive",
+        "Attio",
+        "Twenty",
+        "Podio",
+        "Zoho CRM",
+        "Close",
+        "Zendesk",
+        "Intercom",
+        "Freshdesk",
+        "Front"
+      ]
+    },
+    "api_ready_mcp_missing": {
+      "n": 16,
+      "pct": 16.0,
+      "examples": [
+        "Copper",
+        "Help Scout",
+        "Gladly",
+        "Discord",
+        "Telegram",
+        "WhatsApp Business",
+        "Mailchimp",
+        "Pinterest",
+        "SendGrid",
+        "Magento (Adobe Commerce)",
+        "Ecwid",
+        "Waterfall.io"
+      ]
+    },
+    "outreach_needed": {
+      "n": 12,
+      "pct": 12.0,
+      "by_category": {
+        "CRM and Sales": 1,
+        "Marketing, Ads, Email and Social": 4,
+        "Ecommerce": 2,
+        "Data, SEO and Scraping": 2,
+        "Finance and Fintech": 2,
+        "AI, Research and Media-native": 1
+      },
+      "examples": [
+        "DealCloud",
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "Threads (Meta)",
+        "Amazon Selling Partner",
+        "Plaid",
+        "SE Ranking",
+        "Salesforce Commerce Cloud",
+        "PitchBook",
+        "NotebookLM",
+        "Sherlock"
+      ]
+    }
+  },
+  "headlines": [
+    "90 of 100 apps are buildable as a toolkit today; 72 already combine self-serve creds with an official MCP.",
+    "OAuth2 dominates overall (78/100) and is universal in CRM (10/10) and productivity (10/10). Scraping/SEO is the API-key pocket (5/10 apps).",
+    "89/100 apps are self-serve. Gating clusters in ads (Google Ads, Meta Ads, LinkedIn Ads, Threads (Meta)) and finance (Plaid, PitchBook), not in support, comms, or developer platforms.",
+    "Official MCP already exists on 80/100 apps, including all 10 developer/infra tools. The MCP-missing cluster is consumer messaging (Discord, Telegram, WhatsApp Business), plus a few email APIs -- not meeting-note apps.",
+    "Top blockers are admin/app-review (7: Google Ads, Meta Ads, LinkedIn Ads, Threads, Amazon SP, DealCloud, Plaid), then paid data (SE Ranking, PitchBook), partnership (Salesforce Commerce Cloud), and no public API (Sherlock, NotebookLM).",
+    "Easy toolkit wins: ship CRM, support, and infra first (10/10 infra already official MCP). Outreach-needed is 12 apps. 10 more have a usable REST API today but no vendor MCP (Discord, Telegram, WhatsApp, Mailchimp, SendGrid)."
+  ]
+}
