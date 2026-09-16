@@ -17,10 +17,11 @@ Put real keys in `.env` (never commit it):
 - `COMPOSIO_API_KEY` — from the Composio dashboard
 - `GEMINI_API_KEY` — from Google AI Studio (this project uses Gemini, not OpenAI)
 
-## Commands (later phases)
+## Commands
 
 ```powershell
-python src/research_agent.py --limit 10 --ids 1,11,21,31,41,51,61,71,81,91
+python src/research_agent.py --ids 1,11,21,31,41,51,61,71,81,91
+python src/research_agent.py --compare-gold
 python src/research_agent.py --all
 python src/verify.py --auto
 python src/verify.py --sample 20
@@ -28,7 +29,9 @@ python src/analyze.py
 python src/build_page.py
 ```
 
-Phase 1 only seeded `data/apps.json` and `data/schema.json`. Scripts print `not implemented` until their phase.
+`--ids` / `--all` resume from `cache/<id>/` and `data/results.json`. Use `--force` to research again.
+
+Phase 2 agent: Composio `COMPOSIO_SEARCH_WEB` + `COMPOSIO_SEARCH_FETCH_URL_CONTENT`, then Gemini fills `data/schema.json`.
 
 ## Layout
 

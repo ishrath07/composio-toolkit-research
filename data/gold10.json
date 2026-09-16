@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "one_liner": "Enterprise cloud CRM for sales, service, and custom business apps.",
+    "auth_methods": ["oauth2"],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+      "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm"
+    ],
+    "confidence": 0.9,
+    "notes": "Free Developer Edition exists; Connected Apps use OAuth 2.0. REST plus GraphQL. MCP exists in community/DX experiments, not a long-standing official product MCP.",
+    "needs_human": false
+  },
+  {
+    "id": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "one_liner": "Customer support suite with tickets, help center, and messaging.",
+    "auth_methods": ["oauth2", "token"],
+    "access": "trial",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "community",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "https://developer.zendesk.com/api-reference/"
+    ],
+    "confidence": 0.9,
+    "notes": "OAuth 2.0 and API tokens. Trial/developer accounts are self-serve; some plans gate advanced APIs.",
+    "needs_human": false
+  },
+  {
+    "id": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "one_liner": "Workplace messaging platform with channels, apps, and workflows.",
+    "auth_methods": ["oauth2"],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://api.slack.com/authentication/oauth-v2",
+      "https://api.slack.com/docs"
+    ],
+    "confidence": 0.9,
+    "notes": "Slack apps use OAuth 2.0. Web API is broad REST. Slack publishes an official MCP server.",
+    "needs_human": false
+  },
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "one_liner": "Google's paid search, display, and video advertising platform.",
+    "auth_methods": ["oauth2"],
+    "access": "admin",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "possible_with_work",
+    "blocker": "API use requires a Google Ads developer token, which Google must approve.",
+    "evidence_urls": [
+      "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "https://developers.google.com/google-ads/api/docs/get-started/dev-token"
+    ],
+    "confidence": 0.85,
+    "notes": "OAuth 2.0 plus a developer token. Token approval is the main gate, not a missing API.",
+    "needs_human": true
+  },
+  {
+    "id": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "one_liner": "Hosted ecommerce platform for online stores and checkout.",
+    "auth_methods": ["oauth2", "token"],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://shopify.dev/docs/api/usage/authentication",
+      "https://shopify.dev/docs/api/admin-graphql"
+    ],
+    "confidence": 0.9,
+    "notes": "OAuth for public apps; Admin API tokens for custom apps. REST and GraphQL. Shopify documents MCP/dev tools.",
+    "needs_human": false
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "Pay-as-you-go SEO, SERP, and keyword data API.",
+    "auth_methods": ["basic", "api_key"],
+    "access": "paid",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "none",
+    "verdict": "toolkit_today",
+    "blocker": "Paid credits required after signup; not partnership-gated.",
+    "evidence_urls": [
+      "https://docs.dataforseo.com/v3/auth/",
+      "https://docs.dataforseo.com/v3/"
+    ],
+    "confidence": 0.9,
+    "notes": "HTTP Basic (login/password) to a self-serve REST API. Signup is open; usage is paid.",
+    "needs_human": false
+  },
+  {
+    "id": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "one_liner": "Git hosting, PRs, issues, and CI for software teams.",
+    "auth_methods": ["oauth2", "token"],
+    "access": "self_serve",
+    "api_type": "rest_and_graphql",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "https://docs.github.com/en/rest"
+    ],
+    "confidence": 0.95,
+    "notes": "OAuth apps, GitHub Apps, and PATs. REST plus GraphQL. Official GitHub MCP server.",
+    "needs_human": false
+  },
+  {
+    "id": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "one_liner": "Docs, wikis, and databases for team knowledge and tasks.",
+    "auth_methods": ["oauth2", "token"],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.notion.com/docs/authorization",
+      "https://developers.notion.com/reference/intro"
+    ],
+    "confidence": 0.9,
+    "notes": "Internal integrations use a bearer token; public integrations use OAuth. Official Notion MCP exists.",
+    "needs_human": false
+  },
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "one_liner": "Payments, billing, and financial infrastructure APIs.",
+    "auth_methods": ["api_key", "oauth2"],
+    "access": "self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "mcp": "official",
+    "verdict": "toolkit_today",
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.stripe.com/keys",
+      "https://docs.stripe.com/api"
+    ],
+    "confidence": 0.95,
+    "notes": "Secret/publishable API keys for the account; OAuth for Stripe Connect platforms. Official Stripe MCP.",
+    "needs_human": false
+  },
+  {
+    "id": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "one_liner": "Google research notebook that grounds answers in uploaded sources.",
+    "auth_methods": ["oauth2"],
+    "access": "partner_gated",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "mcp": "none",
+    "verdict": "blocked",
+    "blocker": "No public self-serve NotebookLM API; enterprise Gemini/Workspace paths are gated.",
+    "evidence_urls": [
+      "https://cloud.google.com/gemini",
+      "https://support.google.com/notebooklm"
+    ],
+    "confidence": 0.7,
+    "notes": "Consumer product is UI-only. Do not treat Gemini API as NotebookLM. Human should confirm if an Enterprise API appeared.",
+    "needs_human": true
+  }
+]
