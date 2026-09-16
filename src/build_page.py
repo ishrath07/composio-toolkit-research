@@ -278,7 +278,7 @@ python src/verify.py --auto
 python src/verify.py --sample 20
 python src/analyze.py
 python src/build_page.py</pre>
-  <p class="note">Live URL: this static page after Phase 6 (GitHub + Vercel). Until then, open <code>case_study/index.html</code>.</p>
+  <p class="note">Live page: <a href="https://composio-toolkit-research-six.vercel.app">https://composio-toolkit-research-six.vercel.app</a>. Source: <a href="https://github.com/ishrath07/composio-toolkit-research">github.com/ishrath07/composio-toolkit-research</a>.</p>
 </section>
 
 <section id="verification">

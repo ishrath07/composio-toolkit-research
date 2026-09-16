@@ -2,7 +2,7 @@
 
 Can these 100 apps be AI-agent toolkits? A Composio research agent filled one schema row per app (auth, access, API, MCP, verdict). A human sample of 20 is the accuracy check. The case study is generated from that JSON so the page cannot drift from the table.
 
-**Case study (open this first):** [`case_study/index.html`](case_study/index.html)
+**Case study (open this first):** [live page](https://composio-toolkit-research-six.vercel.app) · [source HTML](case_study/index.html)
 
 **Accuracy:** stratified sample of 20 (2 per category), 120 fields: **74.2% → 95.8%** after prompt fixes and extract-only re-run. Auto-check on 100 rows: 0 schema/contradiction flags. Remaining misses: Mailchimp `api_type`, Gumroad `mcp`, Ahrefs `access`/`api_breadth`, Otter `api_breadth`.
 
